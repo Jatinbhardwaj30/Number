@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix-like Homepage</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        /* Reset some default browser styles */
+        img{
+            width: 10%;
+            height: 10%;
+            
+        }
+ body, h1, h2, h3, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+ /* Basic styling */ */
+ .container {
+ 
+     width: 80%; 
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #111;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar nav ul {
+    list-style: none;
+}
+
+.navbar nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hero {
+    background: #333 url('hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.movie-list {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.movie {
+    display: inline-block;
+    margin: 10px;
+}
+
+.movie img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+/* ... add more styles as needed */
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+} 
+#cl{
+  margin-left: 680px;
+  margin-right: 600px;
+}
+
+h1:hover{
+    color: #e50914;
+}
+a:hover{
+    color: aqua;
+}
+p:hover{
+    color: #e50914;
+}
+h2:hover{
+    color: rgb(120, 80, 27);
+
+}
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <!-- Netflix logo or site name -->
+            <h1>NetFlix</h1>
+            <!-- Navigation links -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </nav>
+            <img  id="cl" src="https://seeklogo.com/images/N/netflix-n-logo-0F1ED3EBEB-seeklogo.com.png" alt=""> 
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="hero">
+            <!-- Hero section with background image or video -->
+            <h2>Welcome to NetFlix</h2>
+            <p>Watch your favorite TV shows and movies anytime, anywhere.</p>
+            <button>Start Watching</button>
+        </div>
+
+        <section class="movie-list">
+            <h2>Popular Movies</h2>
+            <!-- Display a grid of movie thumbnails -->
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE38irmLe6g_hB3zub5KH4x831RVl3pmLUdT-6eDNnTjB4oAC30dXZUaFaZd2aCDnmf2s&usqp=CAU" alt="Movie 1">
+                <h3>Movie Title 1</h3>
+            </div>
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMGhHCNX6hsHrsYfXR7OaT0zrK_ACozhXUzG6YlEqQh7LTkktJP7y9X83RmwVTIOO8uyk&usqp=CAU" alt="Movie 2">
+                <h3>Movie Title 2</h3>
+            </div>
+            <!-- More movie thumbnails... -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 MyFlix</p>
+        </div>
+    </footer>
+</body>
+</html>
